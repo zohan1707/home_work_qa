@@ -1,0 +1,65 @@
+
+1 pwd
+2 mkdir QA30
+3 cd QA30
+4 mkdir 111 222 333
+5 cd 111
+6 touch 1.txt 2.txt 3.txt 4.json 5.json
+7 mkdir 123 456 789
+8 ls
+9 cat 1.txt простотр файла
+10 cat >> 1.txt просмотр с редактированием
+11 Ctrl + C
+12 cd ..
+13 mv  111/2.txt 222/2.txt; mv 111/4.json 222/4.json
+14 cp 111/1.txt 333/1.txt; cp 111/5.json 333/5.json
+15 find -name 1.txt
+16 tail -f | grep -rin 1.txt
+17 head -10 1.txt
+18 tail -10 1.txt
+19 less 1.txt Выйти с просмотра q
+20 date
+
+Первая задача
+
+$ curl http://162.55.220.72:5005/terminal-hw-request
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   283  100   283    0     0   4382      0 --:--:-- --:--:-- --:--:--  4421{
+  "Intro": "Hello!! This is your the first response from server",
+  "Tasks": {
+    "Task_1": "Send the next URL in terminal: http://162.55.220.72:5005/get_method?name=(set_your_String)&age=(set_your_number)",
+    "result": [
+      "Your_String",
+      "Your_number"
+    ]
+  }
+}
+
+
+$ curl "http://162.55.220.72:5005/get_method?name=(Volodymyr)&age=(25)"
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    31  100    31    0     0    473      0 --:--:-- --:--:-- --:--:--   476[
+  "(Volodymyr)",
+  "(25)"
+]
+
+
+Вторая задача
+
+Командой touch создадим файл script
+Командой vim сделаес вызов текстового редактора файла script
+Внутри записываем:
+#!/bin/bash
+mkdir QAscript
+cd QAscript
+mkdir 111 222 333
+cd 111
+touch 1.txt 2.txt 3.txt 4.json 5.json
+mkdir 123 456 789
+ls
+mv 1.txt 123/1.txt ; mv 2.txt 456/2.txt
+
+Скрипт вызываем командой bash script
+
