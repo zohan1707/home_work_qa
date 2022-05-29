@@ -1,0 +1,83 @@
+1. mkdir dir_1
+2. cd dir_1
+3. mkdir inner_dir_1
+4. pwd
+5. touch tf_1.txt
+6.  cat > tf_2.txt
+    - the first 1
+    - the second 2
+    - the third 3
+7. cd inner_dir_1
+8.  cat >  
+    qwerty
+    asdfg
+    zxcvb
+    12345
+9. cat >> tf_3.txt
+   the second 2
+10. cat >> tf_3.txt
+    the sec 2
+11. омандой сd .. выходим в папку dir_1 и там вводим cat >> tf_2.txt
+    the sec 3
+12. cat >> tf_3.txt
+    the SeCoNd 2
+13. командой сd .. выходим в папку dir_1 и там вводим cat >> tf_2.txt
+    the seConD 2
+14. cat > tf_4.txt
+    revgewsrbg
+    werbwerb
+    dsfbsbws
+    erwbewsrgb
+    efqafgv
+    nbwsrthgbqwra
+    qewrgverqwab
+    rbwesar
+    arvbreg
+    aregvbasreg
+    arehberthg
+    arhbreb
+    arega
+    raehb
+    aergba
+15. cat > tF_5.txt
+    eykjmr6k
+    r67kfrjdy
+    r67kt78l
+    e5jr67lkr
+    r67lkrt7lokr
+    r67k8ltrl7ktr
+    r76kr67ikr
+    r76kltrke
+    yw345ywe
+    ery7kjr6
+    w6je56ik
+    e57ker45ik7e
+    e5k7e57kie
+16. ls
+17. cd ..
+18. cat inner_dir_1/tf_3.txt
+19. find -name tf_4.txt
+20. echo -n > inner_dir_1/tf_4.txt
+21. find -type f -name "tf*"
+22. find -type f -iname "tf*"
+23. grep -r sec
+24. grep -ri sec
+25. grep -rw sec
+26. grep -riw sec
+27. grep -r second
+29. grep -ri second
+30. find -type f | grep -rw second
+31. find -type f | grep -rv second
+32. find -type f | grep -v second
+33. tail -4 tf_2txt
+34. head -4 tf_2.txt
+35. mkdir dir_new ; cat > new.txt
+    one
+    two
+    free
+    CTRL + D
+36. grep -lr sec | xargs -I mv {} dir_new
+37. grep -lr sec | xargs -I cp {} inner_dir_new
+38. grep -r sec | xargs >> new2.txt
+39. grep -lr sec | xargs -I {} rm {}
+40. echo '"Good job"'
